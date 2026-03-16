@@ -1,28 +1,28 @@
-
-name: Staff QA Automation Pipeline
+name: QA Automation Pipeline
 
 on:
- push:
-  branches: [ main ]
+  push:
+    branches: [ main ]
 
 jobs:
 
- test:
+  automation-tests:
 
-  runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
-  steps:
+    steps:
 
-   - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-   - name: Setup Java
-     uses: actions/setup-java@v4
-     with:
-      java-version: '17'
-      distribution: 'temurin'
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
 
-   - name: Install Playwright
-     run: mvn exec:java -Dexec.mainClass=com.microsoft.playwright.CLI -Dexec.args="install"
+      - name: Install Playwright
+        run: mvn exec:java -Dexec.mainClass=com.microsoft.playwright.CLI -Dexec.args="install"
 
-   - name: Run tests
-     run: mvn clean test
+      - name: Run automation tests
+        run: mvn clean test
