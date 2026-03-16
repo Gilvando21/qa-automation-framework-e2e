@@ -1,0 +1,7 @@
+core\visual\VisualRegression.class
+ui\flows\PurchaseFlow.class
+core\observability\TestMetrics.class
+core\data\FakeData.class
+ui\components\CartComponent.class
+core\utils\ScreenshotUtils.class
+ui\pages\LoginPage.class
