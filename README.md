@@ -1,58 +1,26 @@
 
-# QA Automation Framework E2E
+# QA Automation Framework (BigTech Version)
 
 ![CI](https://github.com/Gilvando21/qa-automation-framework-e2e/actions/workflows/ci.yml/badge.svg)
 
-Enterprise-grade QA Automation Framework demonstrating modern SDET practices.
+Enterprise-grade QA Automation Framework demonstrating SDET practices.
 
----
+## Capabilities
 
-## Tech Stack
+UI Automation (Playwright)
+API Testing (REST Assured)
+Contract Testing
+Visual Regression Testing
+TestContainers Database Tests
+Selenium Grid Execution
+Parallel Execution (50 tests)
+CI/CD (GitHub Actions)
+Allure Reports
 
-Java  
-Playwright  
-JUnit5  
-REST Assured  
-Docker  
-GitHub Actions CI/CD  
-
----
-
-## Architecture
-
-src
- ├── main
- │   └── java
- │       ├── core
- │       │   ├── data
- │       │   ├── observability
- │       │   └── utils
- │       │
- │       └── ui
- │           ├── pages
- │           ├── components
- │           └── flows
-
----
-
-## E2E Purchase Flow
-
-Login → Select Product → Cart → Checkout → Payment → Confirmation
-
----
-
-## Run Tests
+## Run
 
 mvn clean test
 
----
+## Docker Grid
 
-## CI/CD
-
-Tests run automatically via GitHub Actions on every push.
-Artifacts and screenshots are uploaded to the workflow run.
-
----
-
-Author: Gilvando Matos
-Linkedin: https://www.linkedin.com/in/gilvando-matos-3a259821/
+docker compose up
