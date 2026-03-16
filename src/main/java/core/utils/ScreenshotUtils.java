@@ -6,10 +6,13 @@ import java.nio.file.Paths;
 
 public class ScreenshotUtils {
 
- public static void take(Page page,String name){
+    public static void capture(Page page, String name){
 
-  page.screenshot(new Page.ScreenshotOptions()
-   .setPath(Paths.get("screenshots/" + name + ".png")));
+        page.screenshot(
+            new Page.ScreenshotOptions()
+            .setPath(Paths.get("screenshots/" + name + ".png"))
+        );
 
- }
+        System.out.println("Screenshot saved: " + name);
+    }
 }

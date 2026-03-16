@@ -1,26 +1,20 @@
 
-# QA Automation Framework (BigTech Version)
+## Visual Purchase Flow Test
 
-![CI](https://github.com/Gilvando21/qa-automation-framework-e2e/actions/workflows/ci.yml/badge.svg)
+The framework includes a complete purchase flow automation using Playwright.
 
-Enterprise-grade QA Automation Framework demonstrating SDET practices.
+Steps automated:
 
-## Capabilities
+Login
+Add product to cart
+Open cart
+Checkout
+Confirm order
 
-UI Automation (Playwright)
-API Testing (REST Assured)
-Contract Testing
-Visual Regression Testing
-TestContainers Database Tests
-Selenium Grid Execution
-Parallel Execution (50 tests)
-CI/CD (GitHub Actions)
-Allure Reports
+Screenshots are captured at each step and stored in:
 
-## Run
+screenshots/
 
-mvn clean test
+Run locally:
 
-## Docker Grid
-
-docker compose up
+scripts\run-tests.bat
