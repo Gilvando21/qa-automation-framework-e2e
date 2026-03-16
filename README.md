@@ -1,20 +1,13 @@
 
-## Visual Purchase Flow Test
+## CI Status
 
-The framework includes a complete purchase flow automation using Playwright.
+![CI](https://github.com/Gilvando21/qa-automation-framework-e2e/actions/workflows/ci.yml/badge.svg)
 
-Steps automated:
+---
 
-Login
-Add product to cart
-Open cart
-Checkout
-Confirm order
+## Advanced Capabilities
 
-Screenshots are captured at each step and stored in:
-
-screenshots/
-
-Run locally:
-
-scripts\run-tests.bat
+- Multi-browser execution (Chromium, Firefox, WebKit)
+- Video recording (Playwright)
+- Visual test evidence (screenshots)
+- CI execution history

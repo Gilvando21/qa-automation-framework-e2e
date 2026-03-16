@@ -1,4 +1,5 @@
-PurchaseFlowTest.class
+ui\PurchaseFlowTest.class
+ui\MultiBrowserTest.class
 ui\pages\EcommercePage.class
 ui\tests\PurchaseFlowTest.class
 ContractTest.class
